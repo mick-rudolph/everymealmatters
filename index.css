@@ -900,3 +900,9 @@ text-shadow: 0 1px 0 black;
  #home-footer-home:hover {
    text-decoration: underline;
  }
+
+ /* Counter */
+
+ #counter {
+   transition: all .3s ease;
+ }

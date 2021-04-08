@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link href="index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Home</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +22,16 @@
   <div class="nav-box">
     <div class="nav-box-inner header white"><a href="index.html" class="nav-home">Home</a> &nbsp;&nbsp; <a href="community.html" class="nav-community">Community Impact</a> &nbsp;&nbsp; <a href="pledge.html" class="nav-pledge">Pledge</a> &nbsp;&nbsp; <a class="nav-farms">Sustainable Farms</a> </div>
   </div>
+</div>
+
+
+<div style="color:white; font-size: 40px;">
+  <ul class="counter">
+    <li data-count="100">
+      <i class="fa fa-trophy"></i>
+      <span>0</span>
+    </li>
+  </ul>
 </div>
 
 <section class="container-fluid">
@@ -261,7 +272,7 @@
 
 
 <span class="deforestation">
-  <video autoplay loop class="fact-fit">
+  <video autoplay muted loop class="fact-fit">
     <source src="../everymealmatters/video/Deforestation_compressed.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -271,7 +282,7 @@
 </span>
 
 <span class="pollution">
-  <video autoplay loop class="fact-fit">
+  <video autoplay muted loop class="fact-fit">
     <source src="../everymealmatters/video/cows_compressed.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -281,7 +292,7 @@
 </span>
 
 <span class="greenhouse">
-  <video autoplay loop class="fact-fit">
+  <video autoplay muted loop class="fact-fit">
     <source src="../everymealmatters/video/pov-underwater-view-of-a-scenic-coral-reef-and-fis-UW5949E.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -291,7 +302,7 @@
 </span>
 
 <span class="biodiversity">
-  <video autoplay loop class="fact-fit">
+  <video autoplay muted loop class="fact-fit">
     <source src="../everymealmatters/video/orangutan-eating-on-wildlife-5JH8TVB.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -439,8 +450,23 @@
       </div>
   </div>
 
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+  <div id="waypoint" class="counters" style="color:black; font-size: 40px;">
+    <ul>
+      <li data-count="100">
+        <i class="fa fa-trophy"></i>
+        <span>0</span>
+      </li>
+    </ul>
+  </div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
   

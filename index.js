@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+
+
+
+
+
   $("#selector1").click(function(){
     $("#selector1").addClass("fill");
     $("#selector2").removeClass("fill");
@@ -537,6 +543,28 @@ $(".fab").click(function(){
   var div = $(".alert");
   div.slideToggle(2000);
 });
+
+
+$('ul li span').each(function(){
+  const This = $(this);
+  $({Count: This.text()}).animate(
+    {Count: This.parent().attr
+    ("data-count")},
+    {
+      duration: 5000,
+      easing: "swing",
+      step: function(){
+        This.text(Math.floor(this.Count)
+        )
+      },
+      complete: function(){
+        This.text(this.Count).css(
+          // {color:"blue"}
+        )
+      }
+    }
+)});
+
 
 
 
